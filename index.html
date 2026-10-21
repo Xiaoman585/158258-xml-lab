@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="A simple book catalogue powered by XML, the Fetch API, and DOMParser."
+    >
+    <title>Book Catalogue | XML Lab</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="./" aria-label="Book Catalogue home">
+          <span class="brand-mark" aria-hidden="true">XL</span>
+          <span>
+            158.258
+            <small>Web Development</small>
+          </span>
+        </a>
+        <span class="lab-tag">Lab 01 &middot; XML</span>
+      </header>
+
+      <main>
+        <section class="hero" aria-labelledby="page-title">
+          <div class="hero-copy">
+            <p class="eyebrow">Book catalogue</p>
+            <h1 id="page-title">Structure worth <span>reading.</span></h1>
+            <p class="hero-intro">
+              A small bookstore catalogue built with well-formed XML and brought
+              to life in the browser with JavaScript.
+            </p>
+          </div>
+
+          <dl class="hero-panel">
+            <div>
+              <dt>Source</dt>
+              <dd>book.xml</dd>
+            </div>
+            <div>
+              <dt>Parser</dt>
+              <dd>DOMParser</dd>
+            </div>
+            <div>
+              <dt>Books</dt>
+              <dd id="book-count">&mdash;</dd>
+            </div>
+          </dl>
+        </section>
+
+        <section class="catalogue" aria-labelledby="catalogue-title">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Live catalogue</p>
+              <h2 id="catalogue-title">Featured books</h2>
+            </div>
+            <p id="status" class="status" role="status">Loading catalogue&hellip;</p>
+          </div>
+
+          <div id="book-grid" class="book-grid" aria-live="polite">
+            <article class="book-card skeleton" aria-hidden="true"></article>
+            <article class="book-card skeleton" aria-hidden="true"></article>
+            <article class="book-card skeleton" aria-hidden="true"></article>
+          </div>
+        </section>
+
+        <section class="explainer" aria-labelledby="process-title">
+          <div>
+            <p class="eyebrow">How it works</p>
+            <h2 id="process-title">From markup to page.</h2>
+            <p>
+              The catalogue remains a plain XML document. JavaScript fetches
+              the file, checks that it parsed correctly, and renders each
+              book&rsquo;s title, author, and price.
+            </p>
+          </div>
+          <ol class="steps">
+            <li>
+              <span>01</span>
+              <strong>Fetch</strong>
+              <p>Request <code>book.xml</code> from the same site.</p>
+            </li>
+            <li>
+              <span>02</span>
+              <strong>Parse</strong>
+              <p>Create an XML document with <code>DOMParser</code>.</p>
+            </li>
+            <li>
+              <span>03</span>
+              <strong>Render</strong>
+              <p>Read each required element into a semantic card.</p>
+            </li>
+          </ol>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>XML Lab &middot; 158.258 Web Development</p>
+        <a href="./book.xml">View source XML</a>
+      </footer>
+    </div>
+  </body>
+</html>

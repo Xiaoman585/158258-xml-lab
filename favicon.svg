@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="18" fill="#173d2b"/>
+  <text
+    x="32"
+    y="42"
+    fill="#d8ee9b"
+    font-family="Georgia, serif"
+    font-size="24"
+    font-weight="700"
+    text-anchor="middle"
+  >XL</text>
+</svg>

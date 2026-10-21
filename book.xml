@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookstore>
+  <book id="BK-101">
+    <title>The Hidden Orchard</title>
+    <author>Elena Ward</author>
+    <price>18.99</price>
+  </book>
+  <book id="BK-102">
+    <title>Maps for Night Travelers</title>
+    <author>Noah Bennett</author>
+    <price>22.50</price>
+  </book>
+  <book id="BK-103">
+    <title>A Short History of Rain</title>
+    <author>Priya Das</author>
+    <price>16.75</price>
+  </book>
+  <book id="BK-104">
+    <title>The Quiet Circuit</title>
+    <author>Marcus Lee</author>
+    <price>24.00</price>
+  </book>
+  <book id="BK-105">
+    <title>Letters from the Coast</title>
+    <author>Amelia Stone</author>
+    <price>19.95</price>
+  </book>
+</bookstore>
