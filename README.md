@@ -4,6 +4,8 @@ A responsive book catalogue that loads `book.xml` with the Fetch API, parses
 the response with `DOMParser`, and renders each book's ID, title, author, and
 price.
 
+Live site: <https://Xiaoman585.github.io/158258-xml-lab/>
+
 ## Files
 
 - `index.html` - page structure
